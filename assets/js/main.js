@@ -59,7 +59,7 @@
   function emptyState(base) {
     return (
       '<div class="empty">' +
-      '<img src="' + base + 'assets/img/mito-face.webp" alt="" width="110" height="110">' +
+      '<img src="' + base + 'assets/img/mito-face.svg" alt="" width="110" height="110">' +
       "<div><strong>The first concept is on its way!</strong>" +
       "<p>Mito is charging up. Check back soon for the very first post.</p></div>" +
       "</div>"
