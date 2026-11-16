@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ask Mito · Everything Anything Bio</title>
+  <meta name="description" content="Request a topic: give Mito a biology idea to find in daily life, or an everyday thing to explain with biology.">
+  <meta property="og:title" content="Ask Mito · Everything Anything Bio">
+  <meta property="og:description" content="Got a question? Mito will find the biology in it.">
+  <meta property="og:image" content="https://devansh6306.github.io/everything-anything-bio/assets/img/mito-share.png">
+  <link rel="icon" type="image/svg+xml" href="assets/img/mito-face.svg?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/mito-icon-32.png?v=2">
+  <link rel="apple-touch-icon" href="assets/img/mito-icon-180.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="cells" aria-hidden="true"><span class="cell c1"></span><span class="cell c2"></span><span class="cell c3"></span><span class="cell c4"></span><span class="cell c5"></span></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/img/mito-face.svg" alt="" width="40" height="40"><span>Everything Anything <b>Bio</b></span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="ask.html" aria-current="page">Ask Mito</a></li>
+        <li><a href="about.html">Meet Mito</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Ask Mito</p>
+          <h1>Give Mito a topic. <span class="hl">Any topic.</span></h1>
+          <p class="lead">Curious about something? Send it in. It can be a biology idea you want to see in real life, or an everyday thing you want explained with biology. Mito picks favourites to turn into posts.</p>
+        </div>
+        <div class="mito-stage">
+          <p class="speech">Try me! Coffee, a cell membrane, your phone… I'll find the biology. 🔍</p>
+          <img src="assets/img/mito.svg" alt="Mito the Mighty giving a thumbs up" width="400" height="440">
+        </div>
+      </div>
+    </section>
+
+    <section id="request">
+      <div class="container">
+        <form class="ask-form" id="ask-form" novalidate>
+          <fieldset class="directions">
+            <legend><span class="step">1</span>Which way should Mito connect it?</legend>
+            <label class="direction">
+              <input type="radio" name="direction" value="Biology → daily life" checked>
+              <span class="dir-card">
+                <span class="dir-icons" aria-hidden="true">🧬 <b>→</b> 🏠</span>
+                <strong>Biology → daily life</strong>
+                <span>I know a biology idea. Show me where it pops up in my everyday life.</span>
+              </span>
+            </label>
+            <label class="direction">
+              <input type="radio" name="direction" value="Daily life → biology">
+              <span class="dir-card">
+                <span class="dir-icons" aria-hidden="true">🏠 <b>→</b> 🧬</span>
+                <strong>Daily life → biology</strong>
+                <span>I have an everyday thing or question. Show me the biology behind it.</span>
+              </span>
+            </label>
+          </fieldset>
+
+          <div class="field">
+            <label for="topic"><span class="step">2</span>What's your topic or question?</label>
+            <textarea id="topic" name="topic" rows="4" maxlength="600" required placeholder="e.g. What is osmosis, and where do I see it at home?"></textarea>
+            <div class="ideas" aria-label="Need an idea? Tap one">
+              <span class="ideas-label">Need an idea?</span>
+              <div class="idea-group" data-for="Biology → daily life">
+                <button type="button" class="chip">Osmosis</button>
+                <button type="button" class="chip">Enzymes</button>
+                <button type="button" class="chip">DNA</button>
+                <button type="button" class="chip">Selective membranes</button>
+              </div>
+              <div class="idea-group" data-for="Daily life → biology" hidden>
+                <button type="button" class="chip">Why do I get hiccups?</button>
+                <button type="button" class="chip">Why does bread rise?</button>
+                <button type="button" class="chip">How does soap clean?</button>
+                <button type="button" class="chip">Why do we yawn?</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="name"><span class="step">3</span>Your first name <small>(optional)</small></label>
+              <input id="name" name="name" type="text" maxlength="60" autocomplete="given-name" placeholder="So Mito can thank you">
+            </div>
+            <div class="field">
+              <label for="email">Email <small>(optional)</small></label>
+              <input id="email" name="email" type="email" maxlength="120" autocomplete="email" placeholder="To hear when it's posted">
+            </div>
+          </div>
+          <p class="fine-print">Your email is only used to tell you when your topic is posted. It's never shown on the site or shared.</p>
+
+          <!-- Hidden trap field: real people never fill this in; spam bots often do. -->
+          <div class="hp" aria-hidden="true"><label>Leave empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+          <button class="btn btn-primary" type="submit">Send to Mito ⚡</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>What happens next?</h2>
+        </div>
+        <div class="cards steps">
+          <div class="card"><div class="emoji" aria-hidden="true">📨</div><h3>1. You ask</h3><p>Your topic lands in Mito's inbox.</p></div>
+          <div class="card"><div class="emoji" aria-hidden="true">🔬</div><h3>2. Mito digs in</h3><p>Mito finds the simplest way to link it to biology, or to your life.</p></div>
+          <div class="card"><div class="emoji" aria-hidden="true">✨</div><h3>3. It becomes a post</h3><p>Favourites become posts on the <a href="explore.html">Explore page</a>.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span data-year>2026</span> Everything Anything Bio · Everything is biology.</p>
+      <nav aria-label="Footer"><a href="index.html">Home</a><a href="explore.html">Explore</a><a href="ask.html">Ask Mito</a><a href="about.html">Meet Mito</a></nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/ask.js?v=1"></script>
+</body>
+</html>
