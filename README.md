@@ -49,7 +49,10 @@ It's a plain website (HTML + CSS + a little JavaScript). There's nothing to inst
 1. Copy `posts/_template.html` and give the copy a name like `posts/why-do-onions-make-you-cry.html`.
 2. Replace every `[BRACKETED]` placeholder. Keep the building blocks you want (Mito says, Key idea, Zoom in, Quick check…) and delete the rest.
 3. Add one entry at the top of `assets/js/posts.js` (there's an example in that file).
-4. Commit the changes. The live site updates by itself about a minute later.
+4. In `index.html` and `explore.html`, find `posts.js?v=` near the bottom and raise the number by one (e.g. `?v=2` → `?v=3`). This makes browsers fetch the new post list instead of an old saved copy.
+5. Commit the changes. The live site updates by itself about a minute later.
+
+If the live site ever looks out of date, do a hard refresh: **Ctrl + Shift + R** (Windows) or **Cmd + Shift + R** (Mac).
 
 ## How to switch on the live website (one time)
 
