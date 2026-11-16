@@ -12,7 +12,7 @@ var ASK_CONFIG = {
   // fields:  the entry.123456 code for each question
   google: {
     formUrl: "",
-    fields: { direction: "", topic: "", name: "", email: "" }
+    fields: { direction: "", topic: "", name: "" }
   },
 
   // Option B · Formspree
@@ -84,11 +84,9 @@ var ASK_CONFIG = {
     var data = {
       direction: form.querySelector("input[name=direction]:checked").value,
       topic: topic.value.trim(),
-      name: form.name.value.trim(),
-      email: form.email.value.trim()
+      name: form.name.value.trim()
     };
     if (!data.topic) { say("Tell Mito your topic or question first!", "error"); topic.focus(); return; }
-    if (data.email && !form.email.checkValidity()) { say("That email doesn't look quite right.", "error"); form.email.focus(); return; }
     if (!ready()) {
       say("Mito's inbox is almost ready! Requests open very soon, please check back.", "error");
       return;
