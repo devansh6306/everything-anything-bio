@@ -26,4 +26,39 @@ The site is inspired by the style of science explainer videos: flat, colorful il
 
 ## Status
 
-🚧 Just getting started. The website and the first concept post are coming soon.
+🚧 The website foundation is built. The first concept post is coming soon.
+
+Once GitHub Pages is switched on, the site lives at **https://devansh6306.github.io/everything-anything-bio/**
+
+## How the site is organised
+
+It's a plain website (HTML + CSS + a little JavaScript). There's nothing to install or build.
+
+| File | What it is |
+| --- | --- |
+| `index.html` | The homepage |
+| `explore.html` | The list of all posts, with Everyday / Deep dive filters |
+| `about.html` | About the blog and Meet Mito |
+| `posts/_template.html` | The template for every new post |
+| `assets/js/posts.js` | The list of published posts (feeds the homepage and Explore page) |
+| `assets/css/style.css` | All the colors and styles; change the colors at the top to re-theme the site |
+| `assets/img/` | Mito and other images |
+
+## How to add a new post
+
+1. Copy `posts/_template.html` and give the copy a name like `posts/why-do-onions-make-you-cry.html`.
+2. Replace every `[BRACKETED]` placeholder. Keep the building blocks you want (Mito says, Key idea, Zoom in, Quick check…) and delete the rest.
+3. Add one entry at the top of `assets/js/posts.js` (there's an example in that file).
+4. Commit the changes. The live site updates by itself about a minute later.
+
+## How to switch on the live website (one time)
+
+1. On GitHub, open this repository and click **Settings**.
+2. In the left menu, click **Pages**.
+3. Under **Build and deployment → Source**, pick **Deploy from a branch**.
+4. Under **Branch**, pick **main** and **/ (root)**, then click **Save**.
+5. Wait a minute or two and refresh. GitHub shows the link to your live site at the top of that page.
+
+## Preview it on your own computer
+
+Open `index.html` in any browser. Everything works without a server.

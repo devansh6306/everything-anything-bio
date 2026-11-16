@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore · Everything Anything Bio</title>
+  <meta name="description" content="Every post on Everything Anything Bio, from everyday biology to deep dives.">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="cells" aria-hidden="true"><span class="cell c1"></span><span class="cell c2"></span><span class="cell c3"></span><span class="cell c4"></span><span class="cell c5"></span></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/img/mito-face.webp" alt="" width="40" height="40"><span>Everything Anything <b>Bio</b></span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html" aria-current="page">Explore</a></li>
+        <li><a href="about.html">Meet Mito</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Explore</p>
+          <h1>Find the biology in everything</h1>
+          <p>Pick a track, or browse them all. Everyday posts start from things you know. Deep dives take on tougher ideas, step by step.</p>
+        </div>
+
+        <div class="filters" data-filter-for="all-posts" role="group" aria-label="Filter posts">
+          <button class="chip" data-track="all" aria-pressed="true">All posts</button>
+          <button class="chip" data-track="everyday" aria-pressed="false">🍳 Everyday bio</button>
+          <button class="chip" data-track="deep" aria-pressed="false">🔬 Deep dives</button>
+        </div>
+
+        <div id="all-posts" data-posts></div>
+        <noscript><p>Turn on JavaScript to see the list of posts.</p></noscript>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Coming up</h2>
+          <p>Questions Mito is getting ready to answer.</p>
+        </div>
+        <div class="cards">
+          <div class="card soon"><div class="emoji" aria-hidden="true">☕</div><span><span class="tag tag-soon">Coming soon</span></span><h3>Why does coffee wake you up?</h3><p>A tiny molecule, a sneaky look-alike, and a tired brain.</p></div>
+          <div class="card soon"><div class="emoji" aria-hidden="true">🧅</div><span><span class="tag tag-soon">Coming soon</span></span><h3>Why do onions make you cry?</h3><p>An onion's chemical defence system, and your eyes' alarm.</p></div>
+          <div class="card soon"><div class="emoji" aria-hidden="true">🫁</div><span><span class="tag tag-soon">Coming soon</span></span><h3>What is your body doing right now?</h3><p>Billions of jobs, happening while you read this sentence.</p></div>
+          <div class="card soon"><div class="emoji" aria-hidden="true">🧫</div><span><span class="tag tag-soon">Coming soon</span></span><h3>How does a membrane choose what gets through?</h3><p>From lab filters to the skin around every one of your cells.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span data-year>2026</span> Everything Anything Bio · Everything is biology.</p>
+      <nav aria-label="Footer"><a href="index.html">Home</a><a href="explore.html">Explore</a><a href="about.html">Meet Mito</a></nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/posts.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
