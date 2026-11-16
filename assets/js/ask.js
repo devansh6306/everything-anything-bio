@@ -11,8 +11,8 @@ var ASK_CONFIG = {
   // formUrl: the form's link ending in /formResponse
   // fields:  the entry.123456 code for each question
   google: {
-    formUrl: "",
-    fields: { direction: "", topic: "", name: "" }
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdMo15xphS4PS4joD4I9WJ4CNb47KuagM--aZ2u-DPjesFtHA/formResponse",
+    fields: { direction: "entry.439522009", topic: "entry.356112311", name: "entry.1655718489" }
   },
 
   // Option B · Formspree
