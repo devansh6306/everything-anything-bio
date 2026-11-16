@@ -1,0 +1,164 @@
+<!doctype html>
+<!--
+  ==========================================================
+  POST TEMPLATE  ·  How to use it
+  1. Make a copy of this file in the same "posts" folder.
+     Name it after the question, using dashes, e.g.
+     why-do-onions-make-you-cry.html
+  2. Replace every [BRACKETED] bit of text below.
+  3. Keep the building blocks you need, delete the ones
+     you don't. Each one is marked with a comment that
+     starts with "BLOCK:", e.g. "BLOCK: Mito says".
+  4. Add an entry for the post at the top of
+     assets/js/posts.js so it appears on the homepage.
+  This file starts with an underscore and isn't listed in
+  posts.js, so readers will never see it on the site.
+  ==========================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[POST TITLE] · Everything Anything Bio</title>
+  <meta name="description" content="[ONE SENTENCE SUMMARY FOR GOOGLE AND LINK PREVIEWS]">
+  <meta property="og:title" content="[POST TITLE]">
+  <meta property="og:description" content="[ONE SENTENCE SUMMARY]">
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="cells" aria-hidden="true"><span class="cell c1"></span><span class="cell c2"></span><span class="cell c3"></span><span class="cell c4"></span><span class="cell c5"></span></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="../index.html"><img src="../assets/img/mito-face.webp" alt="" width="40" height="40"><span>Everything Anything <b>Bio</b></span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../explore.html" aria-current="page">Explore</a></li>
+        <li><a href="../about.html">Meet Mito</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <article>
+      <!-- BLOCK: Title area -->
+      <header class="container post-hero">
+        <div class="tags">
+          <!-- Use tag-everyday + "Everyday bio", or tag-deep + "Deep dive" -->
+          <span class="tag tag-everyday">Everyday bio</span>
+        </div>
+        <h1>[POST TITLE, ideally a question?]</h1>
+        <p class="subtitle">[A one line hook that makes people want to read on.]</p>
+        <p class="meta">[DATE, e.g. 20 Nov 2026] · [X] min read</p>
+
+        <!-- BLOCK: Big illustration. Put an image in assets/img/ and swap the emoji for:
+             <img src="../assets/img/[your-image].webp" alt="[describe the picture]"> -->
+        <div class="post-art" role="img" aria-label="[DESCRIBE THE PICTURE]">🧬</div>
+      </header>
+
+      <div class="container">
+        <div class="post-body">
+
+          <!-- BLOCK: Quick answer (the whole post in 1 to 2 sentences) -->
+          <div class="quick-answer">
+            <h3>⚡ The quick answer</h3>
+            <p>[Answer the question in one or two simple sentences.]</p>
+          </div>
+
+          <!-- BLOCK: Section heading with a number badge -->
+          <h2><span class="num">1</span>[First small idea]</h2>
+          <p>[Start with something the reader already knows. Use short paragraphs. Explain any science word the first time you use it.]</p>
+
+          <!-- BLOCK: Mito says (Mito talks to the reader) -->
+          <div class="mito-says">
+            <img src="../assets/img/mito-face.webp" alt="" width="64" height="64">
+            <div>
+              <span class="who">Mito says</span>
+              <p>[A friendly, simple explanation, analogy, or fun fact in Mito's voice.]</p>
+            </div>
+          </div>
+
+          <h2><span class="num">2</span>[Second small idea]</h2>
+          <p>[Build on the first idea.]</p>
+
+          <!-- BLOCK: Key idea (the one sentence to remember) -->
+          <div class="key-idea">
+            <b class="label">Key idea</b>
+            [The single most important sentence of this section.]
+          </div>
+
+          <!-- BLOCK: Everyday life ↔ biology connection -->
+          <div class="connect">
+            <div class="side life"><b>In your life</b>[The everyday thing, e.g. a coffee filter.]</div>
+            <div class="link" aria-hidden="true">🔗</div>
+            <div class="side bio"><b>In your cells</b>[The matching biology, e.g. the cell membrane.]</div>
+          </div>
+
+          <!-- BLOCK: Figure / diagram. Replace the text inside .frame with an <img>. -->
+          <figure>
+            <div class="frame">[Diagram goes here]</div>
+            <figcaption>[What the diagram shows.]</figcaption>
+          </figure>
+
+          <!-- BLOCK: Zoom in (optional extra detail, folded away) -->
+          <details class="zoom">
+            <summary>Zoom in: [the nerdy detail]</summary>
+            <p>[More advanced explanation for curious readers. People can skip it and still follow the post.]</p>
+          </details>
+
+          <h2><span class="num">3</span>[Bring it home]</h2>
+          <p>[Tie it back to the reader's life, and to the big message: everything is biology.]</p>
+
+          <!-- BLOCK: Glossary -->
+          <h2>Words to know</h2>
+          <dl class="glossary">
+            <div><dt>[Word]</dt><dd>[Simple meaning.]</dd></div>
+            <div><dt>[Word]</dt><dd>[Simple meaning.]</dd></div>
+          </dl>
+
+          <!-- BLOCK: Quick check (a little quiz with a hidden answer) -->
+          <div class="quiz">
+            <h3>🧠 Quick check</h3>
+            <p>[A question the reader can answer after reading.]</p>
+            <details>
+              <summary>Show the answer</summary>
+              <p>[The answer, with a short reason.]</p>
+            </details>
+          </div>
+
+          <!-- BLOCK: Sign-off -->
+          <div class="mito-says">
+            <img src="../assets/img/mito-face.webp" alt="" width="64" height="64">
+            <div>
+              <span class="who">Mito says</span>
+              <p>[A cheerful goodbye and a teaser for what's next.] See? Everything is biology! ⚡</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- BLOCK: Previous / next post links. Delete one side if there's nothing there. -->
+        <nav class="post-nav" aria-label="More posts">
+          <a href="../explore.html"><small>← Back to</small>All posts</a>
+          <a class="next" href="../explore.html"><small>Next up →</small>[NEXT POST TITLE]</a>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span data-year>2026</span> Everything Anything Bio · Everything is biology.</p>
+      <nav aria-label="Footer"><a href="../index.html">Home</a><a href="../explore.html">Explore</a><a href="../about.html">Meet Mito</a></nav>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

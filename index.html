@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Everything Anything Bio · Everything is biology</title>
+  <meta name="description" content="A friendly blog that connects anything and everything in your life back to biology, guided by Mito the Mighty, the Happy Mitochondria.">
+  <meta property="og:title" content="Everything Anything Bio">
+  <meta property="og:description" content="Everything is biology. Literally everything. And biology is simpler than you think.">
+  <meta property="og:image" content="assets/img/mito.webp">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="cells" aria-hidden="true"><span class="cell c1"></span><span class="cell c2"></span><span class="cell c3"></span><span class="cell c4"></span><span class="cell c5"></span></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/img/mito-face.webp" alt="" width="40" height="40"><span>Everything Anything <b>Bio</b></span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="about.html">Meet Mito</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Welcome to Everything Anything Bio</p>
+          <h1>Everything is biology. <span class="hl">Literally everything.</span></h1>
+          <p class="lead">Why does coffee wake you up? Why do onions make you cry? What is your body doing right now, while you read this? Every part of your life connects back to biology, and biology is simpler than you think.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="explore.html">Start exploring →</a>
+            <a class="btn btn-ghost" href="about.html">Meet Mito</a>
+          </div>
+        </div>
+        <div class="mito-stage">
+          <p class="speech">Hi! I'm Mito, the powerhouse of the cell. Let's find the biology in everything! ⚡</p>
+          <img src="assets/img/mito.webp" alt="Mito the Mighty, a cheerful purple mitochondrion with goggles, giving a thumbs up" width="653" height="688">
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Some of the things that are secretly biology">
+      <span><b>☕</b> your morning coffee</span>
+      <span><b>🧅</b> chopping onions</span>
+      <span><b>😴</b> a lazy nap</span>
+      <span><b>🏃</b> a quick run</span>
+      <span><b>🧫</b> a cell membrane</span>
+      <span><b>🍞</b> a slice of bread</span>
+      <span><b>❤️</b> your heartbeat</span>
+    </div>
+
+    <!-- TWO TRACKS -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Two ways in. One big idea.</h2>
+          <p>Start with things you already know, or dive into tougher science. Either way, you'll see the same simple biology hiding underneath.</p>
+        </div>
+        <div class="tracks">
+          <article class="track everyday">
+            <div class="icon" aria-hidden="true">🍳</div>
+            <span class="tag tag-everyday">Everyday bio</span>
+            <h3>The biology of your normal day</h3>
+            <p>Breakfast, bedtime, sneezes and sunburns. Small moments, explained with the biology going on inside you.</p>
+            <ul>
+              <li>Why does coffee wake you up?</li>
+              <li>Why do onions make you cry?</li>
+              <li>What is your body doing right now?</li>
+            </ul>
+            <a class="btn btn-ghost" href="explore.html?track=everyday">Everyday posts</a>
+          </article>
+          <article class="track deep">
+            <div class="icon" aria-hidden="true">🔬</div>
+            <span class="tag tag-deep">Deep dive</span>
+            <h3>Tougher concepts, made simple</h3>
+            <p>The big ideas from science and engineering, explained by linking them back to the cells you're made of.</p>
+            <ul>
+              <li>How does a membrane decide which molecules get through?</li>
+              <li>Why is your cell membrane the world's best filter?</li>
+              <li>How do cells make energy from food?</li>
+            </ul>
+            <a class="btn btn-ghost" href="explore.html?track=deep">Deep dives</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST POSTS -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Latest posts</h2>
+          <p>Fresh from Mito's lab.</p>
+        </div>
+        <div id="latest" data-posts data-limit="6"></div>
+        <noscript><p>Turn on JavaScript to see the latest posts, or visit the <a href="explore.html">Explore page</a>.</p></noscript>
+      </div>
+    </section>
+
+    <!-- MEET MITO -->
+    <section>
+      <div class="container">
+        <div class="meet">
+          <img src="assets/img/mito.webp" alt="Mito the Mighty flexing and smiling" width="653" height="688" loading="lazy">
+          <div>
+            <p class="eyebrow" style="color: var(--energy)">Your guide</p>
+            <h2>Meet Mito the Mighty</h2>
+            <p>Mito is a mitochondrion, one of the tiny power stations inside almost every cell in your body. Mito turns the food you eat into the energy you use for everything, from blinking to running. Now Mito has a second job: guiding you through this blog and turning big ideas into small, friendly pieces.</p>
+            <div class="facts">
+              <div class="fact"><b>Job</b>Powerhouse of the cell</div>
+              <div class="fact"><b>Superpower</b>Making ATP, your cells' energy</div>
+              <div class="fact"><b>Favorite thing</b>Explaining stuff simply</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span data-year>2026</span> Everything Anything Bio · Everything is biology.</p>
+      <nav aria-label="Footer"><a href="index.html">Home</a><a href="explore.html">Explore</a><a href="about.html">Meet Mito</a></nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/posts.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
