@@ -29,5 +29,13 @@
    ========================================================== */
 
 window.POSTS = [
-  // Your first post goes here.
+  {
+    title: "Does your body reach equilibrium when you die?",
+    url: "posts/does-your-body-reach-equilibrium-when-you-die.html",
+    track: "deep",
+    emoji: "⚖️",
+    summary: "Your cells run reactions nonstop, and chemistry says reactions settle into balance. So when does your body get there? Is it after death?",
+    date: "2026-11-17",
+    minutes: 9
+  }
 ];
