@@ -22,6 +22,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=3">
+  <style>
+    .just-posted {
+      display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+      background: linear-gradient(120deg, var(--mito-deep), var(--surface-2));
+      border: 2px solid var(--energy); border-radius: var(--radius);
+      padding: 14px 20px; margin: 0 0 26px; color: var(--text); text-decoration: none;
+      box-shadow: var(--shadow); transition: transform .2s ease;
+    }
+    .just-posted:hover, .just-posted:focus-visible { transform: translateY(-2px); }
+    .just-posted .badge {
+      background: var(--energy); color: var(--bg-deep); font-family: var(--font-head);
+      font-weight: 600; font-size: .85rem; letter-spacing: .06em; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 999px;
+    }
+    .just-posted .what { flex: 1 1 220px; font-weight: 700; }
+    .just-posted .what small { display: block; color: var(--muted); font-weight: 400; }
+    .just-posted .go { font-family: var(--font-head); font-weight: 600; color: var(--energy); white-space: nowrap; }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -45,9 +63,15 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
+          <!-- "Just posted" tile: fills itself in from the newest post in assets/js/posts.js -->
+          <a class="just-posted" id="just-posted" href="explore.html" hidden>
+            <span class="badge">✨ Just posted</span>
+            <span class="what"><span id="just-posted-title"></span><small>Something new is up. Check it out!</small></span>
+            <span class="go">Read it →</span>
+          </a>
           <p class="eyebrow">Welcome to Everything Anything Bio</p>
           <h1>Everything is biology. <span class="hl">Literally everything.</span></h1>
-          <p class="lead">Why does coffee wake you up? Why do onions make you cry? What is your body doing right now, while you read this? Every part of your life connects back to biology, and biology is simpler than you think.</p>
+          <p class="lead">Does your body reach equilibrium when you die? Is origami perfection? Why do bees build their honeycombs out of hexagons? Every part of your life connects back to biology, and biology is simpler than you think.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="explore.html">Start exploring →</a>
             <a class="btn btn-ghost" href="about.html">Meet Mito</a>
@@ -61,13 +85,12 @@
     </section>
 
     <div class="ticker" aria-label="Some of the things that are secretly biology">
-      <span><b>☕</b> your morning coffee</span>
-      <span><b>🧅</b> chopping onions</span>
-      <span><b>😴</b> a lazy nap</span>
-      <span><b>🏃</b> a quick run</span>
-      <span><b>🧫</b> a cell membrane</span>
-      <span><b>🍞</b> a slice of bread</span>
-      <span><b>❤️</b> your heartbeat</span>
+      <span><b>🐝</b> a honeycomb</span>
+      <span><b>🦢</b> a paper crane</span>
+      <span><b>🌿</b> a leaf unfolding</span>
+      <span><b>🍵</b> a cooling cup of tea</span>
+      <span><b>⚖️</b> a chemical balance</span>
+      <span><b>🍂</b> fallen leaves</span>
     </div>
 
     <!-- TWO TRACKS -->
@@ -82,11 +105,11 @@
             <div class="icon" aria-hidden="true">🍳</div>
             <span class="tag tag-everyday">Everyday bio</span>
             <h3>The biology of your normal day</h3>
-            <p>Breakfast, bedtime, sneezes and sunburns. Small moments, explained with the biology going on inside you.</p>
+            <p>Folded paper, honeycombs and a cup of tea going cold. Small things you see every day, explained with the biology hiding inside them.</p>
             <ul>
-              <li>Why does coffee wake you up?</li>
-              <li>Why do onions make you cry?</li>
-              <li>What is your body doing right now?</li>
+              <li>Is origami perfection? <em>(coming soon)</em></li>
+              <li>Why do bees build hexagons?</li>
+              <li>How does a leaf fold up inside a bud?</li>
             </ul>
             <a class="btn btn-ghost" href="explore.html?track=everyday">Everyday posts</a>
           </article>
@@ -96,9 +119,9 @@
             <h3>Tougher concepts, made simple</h3>
             <p>The big ideas from science and engineering, explained by linking them back to the cells you're made of.</p>
             <ul>
-              <li>How does a membrane decide which molecules get through?</li>
-              <li>Why is your cell membrane the world's best filter?</li>
-              <li>How do cells make energy from food?</li>
+              <li><a href="posts/does-your-body-reach-equilibrium-when-you-die.html">Does your body reach equilibrium when you die?</a> <em>(new!)</em></li>
+              <li>Why do your cells spend so much energy pumping ions?</li>
+              <li>What is a steady state, and why are you one?</li>
             </ul>
             <a class="btn btn-ghost" href="explore.html?track=deep">Deep dives</a>
           </article>
@@ -161,5 +184,15 @@
 
   <script src="assets/js/posts.js?v=4"></script>
   <script src="assets/js/main.js?v=2"></script>
+  <script>
+    (function () {
+      var newest = (window.POSTS || [])[0];
+      if (!newest) return;
+      var tile = document.getElementById("just-posted");
+      tile.href = newest.url;
+      document.getElementById("just-posted-title").textContent = (newest.emoji ? newest.emoji + " " : "") + newest.title;
+      tile.hidden = false;
+    })();
+  </script>
 </body>
 </html>
