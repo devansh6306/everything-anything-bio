@@ -29,5 +29,13 @@
    ========================================================== */
 
 window.POSTS = [
-  // Your first post goes here.
+  {
+    title: "Does your body reach equilibrium when you die?",
+    url: "posts/does-your-body-reach-equilibrium-when-you-die.html",
+    track: "deep",
+    emoji: "⚖️",
+    summary: "Being alive means burning energy to stay out of chemical balance. So what happens when the energy stops?",
+    date: "2026-11-17",
+    minutes: 9
+  }
 ];
